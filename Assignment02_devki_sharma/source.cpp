@@ -30,12 +30,13 @@ int main() {
 		STUDENT_DATA student;
 		student.firstName = line.substr(0, cpos);
 		student.lastName = line.substr(cpos + 1);
-
-		students.push_back(student);
-
-		
+		students.push_back(student);		
 	}
-	std::cout << students.size();
+#ifdef _DEBUG
+	for(size_t i= 0; i < students.size(); ++i) {
+		std::cout << "Student " << i + 1 << ": " << students[i].firstName << " " << students[i].lastName << std::endl;
+	}
+#endif
 
 	return 1;
 }
