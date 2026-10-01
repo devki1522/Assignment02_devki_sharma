@@ -15,10 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\StudentData.txt">
+    <ClCompile Include="source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="StudentData.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="..\..\StudentData_Emails.txt">
+    <Text Include="StudentData_Emails.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
