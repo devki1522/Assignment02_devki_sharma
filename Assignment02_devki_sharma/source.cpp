@@ -34,7 +34,7 @@ int main() {
 	}
 #ifdef _DEBUG
 	for(size_t i= 0; i < students.size(); ++i) {
-		std::cout << "Student " << i + 1 << ": " << students[i].firstName << " " << students[i].lastName << std::endl;
+		std::cout << students[i].firstName << " " << students[i].lastName << std::endl;
 	}
 #endif
 
